@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 选择器</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        h1 {
+            color: white;
+            text-align: start;
+        }
+        h2 {
+            color: rgb(57, 54, 88);
+            text-align: start;
+        }
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            color: black;
+        }
+        #header {
+            color: green;
+            font-size: 24px;
+        }
+        *{
+            font-family: 'kaiTi', 'Microsoft YaHei', sans-serif;
+        }
+        .father > .son {
+            color: blue;
+            font-size: 18px;
+        }
+        .father p{
+            color: orange;
+            font-size: 18px;
+        }
+        h3 + p {
+            background-color: red;
+            color: purple;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>不同类型的css选择器</h1>
+
+    <h2>这是一个元素选择器示例</h2>
+    <h3 class="highlight">这是一个类选择器</h3>
+    <h4 id="header">这是一个id选择器示例</h4>
+    <div class="father">
+        <p class="son">这是一个子元素选择器示例</p>
+        <div>
+            <p class="grandson">这是一个后代选择器示例</p>
+        </div>
+    </div>
+
+    <p>这是一个普通的 p 标签</p>
+    <h3>这是一个相邻的兄弟选择器示例</h3>
+    <p>这是另一个 p 标签</p>
+</body>
+</html>
